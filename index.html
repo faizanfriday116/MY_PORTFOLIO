@@ -379,43 +379,65 @@
         </div>
     </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/300x200?text=Project+1" alt="Project 1">
-                    </div>
-                    <div class="project-content">
-                        <h3>E-Commerce Site</h3>
-                        <p>Custom WooCommerce store with payment integration and responsive design.</p>
-                        <a href="#" class="btn" style="font-size: 0.9rem; padding: 8px 20px;">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/300x200?text=Project+2" alt="Project 2">
-                    </div>
-                    <div class="project-content">
-                        <h3>Corporate Blog</h3>
-                        <p>WordPress theme with advanced search and content management.</p>
-                        <a href="#" class="btn" style="font-size: 0.9rem; padding: 8px 20px;">View Project</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="https://via.placeholder.com/300x200?text=Project+3" alt="Project 3">
-                    </div>
-                    <div class="project-content">
-                        <h3>Portfolio Site</h3>
-                        <p>Dynamic portfolio with animations and contact form integration.</p>
-                        <a href="#" class="btn" style="font-size: 0.9rem; padding: 8px 20px;">View Project</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="projects" style="padding:60px 0;">
+  <div style="max-width:1100px;margin:auto;">
+    <h2 style="text-align:center;margin-bottom:30px;">Projects</h2>
+
+    <div style="
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap:20px;
+    ">
+
+      <!-- Project 1 -->
+      <a href="https://tabizan1.odoo.com/" target="_blank"
+         onmouseover="hoverIn(this)" onmouseout="hoverOut(this)"
+         style="display:block; overflow:hidden; border-radius:12px; transition:0.3s;">
+        <img src="https://via.placeholder.com/500x300?text=Project+1"
+             style="width:100%; display:block;">
+      </a>
+
+      <!-- Project 2 -->
+      <a href="https://faizanfriday116.github.io/fun-with-english/" target="_blank"
+         onmouseover="hoverIn(this)" onmouseout="hoverOut(this)"
+         style="display:block; overflow:hidden; border-radius:12px; transition:0.3s;">
+        <img src="https://via.placeholder.com/500x300?text=Project+2"
+             style="width:100%; display:block;">
+      </a>
+
+      <!-- Project 3 -->
+      <a href="https://faizanfriday116.github.io/Demo-Restaurant/" target="_blank"
+         onmouseover="hoverIn(this)" onmouseout="hoverOut(this)"
+         style="display:block; overflow:hidden; border-radius:12px; transition:0.3s;">
+        <img src="https://via.placeholder.com/500x300?text=Project+3"
+             style="width:100%; display:block;">
+      </a>
+
+      <!-- Project 4 -->
+      <a href="https://tabizan2.odoo.com/" target="_blank"
+         onmouseover="hoverIn(this)" onmouseout="hoverOut(this)"
+         style="display:block; overflow:hidden; border-radius:12px; transition:0.3s;">
+        <img src="https://via.placeholder.com/500x300?text=Project+4"
+             style="width:100%; display:block;">
+      </a>
+
+    </div>
+  </div>
+</section>
+
+   <script>
+function hoverIn(el){
+  el.style.transform = "scale(1.05)";
+  el.style.boxShadow = "0 15px 30px rgba(0,0,0,0.3)";
+}
+
+function hoverOut(el){
+  el.style.transform = "scale(1)";
+  el.style.boxShadow = "none";
+}
+</script>
+
+
 
     <section id="contact">
         <div class="container">
@@ -445,7 +467,7 @@
             </form>
         </div>
     </section>
-
+ 
     <footer>
         <div class="container">
             <p>&copy; 2023 Faizan Zahoor. All rights reserved.</p>
@@ -486,5 +508,6 @@
             if (window.scrollY > 100) {
 
                 header
+
 
 
